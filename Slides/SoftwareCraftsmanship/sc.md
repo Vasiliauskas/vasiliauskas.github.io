@@ -6,3 +6,5 @@ Vidas Vasiliauskas
 ![Alt text](images/nerd.jpg)
 ---
 ![Alt text](images/chemistry.jpg)
+---
+# Ways we do it
