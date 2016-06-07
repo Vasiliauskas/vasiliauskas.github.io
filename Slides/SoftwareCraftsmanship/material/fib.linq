@@ -10,12 +10,32 @@ void Main(int number = 10)
 	
 	// Linq + Extensions method
 	Console.WriteLine(string.Format("Extension on Linq: {0}", GetFibs().GiveMe(number)));
+	
+	// Recursion
+	Console.WriteLine(string.Format("Extension on Linq: {0}", GetRecursiveFib(number)));
+}
+
+private int Get10thFib()
+{
+	int fib1 = 1;
+	int fib2 = 1;
+	for(int i = 2; i <= 10; i++)
+	{
+		int result = fib1 + fib2;
+		fib1 = fib2;
+		fib2 = result;
+		
+		if(i == 10)
+			return result;
+	}
+	
+	return 0;
 }
 
 private int GetFib(int number)
 {
 	int fib1 = 1;
-	int fib2 = 2;
+	int fib2 = 1;
 	for(int i = 2; i <= number; i++)
 	{
 		int result = fib1 + fib2;
@@ -31,8 +51,8 @@ private int GetFib(int number)
 
 private IEnumerable<int> GetFibs()
 {
-    int fib1= 1;
-	int fib2 = 2;
+    int fib1 = 1;
+	int fib2 = 1;
 	
 	yield return fib1;
 	yield return fib2;
@@ -47,6 +67,17 @@ private IEnumerable<int> GetFibs()
 	}
 }
 
+private int GetRecursiveFib(int number)
+{
+    if(number == 1 || number == 2)
+		return 1;
+		
+	if(number < 1)
+		return 0;
+	
+	return GetRecursiveFib(number-1) + GetRecursiveFib(number-2);
+}
+
 static class FibExtensions
 {
 	public static int GiveMe(this IEnumerable<int> collection, int number)
@@ -54,5 +85,3 @@ static class FibExtensions
 		return collection.Skip(number).First();
 	}
 }
-
-// Define other methods and classes here
