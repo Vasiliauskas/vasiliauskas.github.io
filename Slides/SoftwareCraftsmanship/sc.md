@@ -105,6 +105,8 @@ Vidas Vasiliauskas
 	string result = GetFibs().GiveMe(10);	
 ```
 ---
+Client comes in and *NOW* he wants the 15th fib number instead of 10th
+---
 ![Alt text](images/batman.jpeg)
 ---
 >As aspiring Software Craftsmen 
