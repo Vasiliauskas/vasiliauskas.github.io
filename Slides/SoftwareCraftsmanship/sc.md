@@ -14,25 +14,22 @@ Vidas Vasiliauskas
 ---
 ### I want a program that can tell me what the 10th Fibonacci sequence number is
 ---
-### **Fibonacci sequence** is a progression where the next member is calculated by summing up previous two
-#### **fib(x) = fib(x-1) + fib(x-2)**
+### Fibonacci sequence is a progression where the next member is calculated by summing up previous two
+**fib(x) = fib(x-1) + fib(x-2)**
 ---
 ``` cs
 	// Hardcoded Loop
 	private int Get10thFib()
 	{
-		int fib1 = 1, fib2 = 1;
+		int fib1 = 1, fib2 = 1, result = 0;
 		
 		for(int i = 3; i <= 10; i++)
 		{
 			int result = fib1 + fib2;
 			fib1 = fib2;
 			fib2 = result;
-			
-			if(i == 10)
-				return result;
 		}
-		return 0;
+		return result;
 	}
 ```
 ---
@@ -125,6 +122,13 @@ Through this work we have come to value:
 	
 That is, in pursuit of the items on the left 
 we have found the items on the right to be indispensable.
+---
+![Alt text](images/startup.png)
+---
+![Alt text](images/startup2.jpg)
+---
+### Career? Why not
+Junior Software Engineer -> Regular -> Senior -> Lead -> Software Architect (CTO)
 ---
 # This is it!
 @Vasiliauskas
