@@ -51,7 +51,7 @@ Vidas Vasiliauskas
   2. Test
   3. Delivery
   4. Retrospective
-  5. Goto to [1] and Repeat untill all deliverables done
+  5. Goto to [1] and repeat untill all deliverables done
 * Final delivery
 ---
 ![Alt text](images/howprojectswork.jpg)
