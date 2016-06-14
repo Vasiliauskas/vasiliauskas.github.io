@@ -54,6 +54,8 @@ Vidas Vasiliauskas
   5. Goto to [1] and repeat untill all deliverables done
 * Final delivery
 ---
+When you are stuck - G.R.O.W.
+---
 ![Alt text](images/howprojectswork.jpg)
 ---
 ***
