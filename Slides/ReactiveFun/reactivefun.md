@@ -45,11 +45,6 @@ using System.Reactive;
 Note: Guess namespace
 ---
 ``` cs
-interface ISubject<T> : ISubject<T, T>, IObserver<T>, IObservable<T>
-```
-Note: Interface segregation
----
-``` cs
 Subject<T>
 ```
 ``` cs
@@ -60,6 +55,9 @@ BehaviorSubject<T>
 ```
 ``` cs
 AsyncSubject<T>
+```
+``` cs
+// ISubject<T> : ISubject<T,T>, IObservable<T>, IObserver<T> 
 ```
 Note: 4 dudes, CODING
 ---
@@ -73,17 +71,10 @@ Note: all the power where make sense, CODING
 ####**Rx** vs **Linq**
 ###                 136 : 55
 (No overloads)
-``` cs
-typeof(Observable).GetMethods()
-	.Select(m => m.Name).Distinct().Count(); // 136
-typeof(Enumerable).GetMethods()
-	.Select(m => m.Name).Distinct().Count(); // 55
-```
 Note: CODING
 ---
 ``` cs
 Amb(IObservable)
-AsyncFirst()
 AsyncLast()
 Buffer(int i) // overload with timespan for time buffer
 CombineLatest(IObservable, combineFunc)
@@ -92,12 +83,7 @@ Switch()
 ```
 Note: favorite, AMB, CODING
 ---
-* UI events
-* Domain events
-* Streaming services
-* Live queries
-* Async sequencing
-* Parallel computing
+![Alt text](images/marbles.png)
 ---
 ### Testing hard or hardly testing?
 ``` cs
@@ -105,9 +91,17 @@ class TestScheduler // Implements IScheduler
 ```
 Note: CODING
 ---
+* UI events
+* Domain events
+* Streaming services
+* Live queries
+* Parallel computing
+
+---
 * http://reactivex.io/
-* https://github.com/Reactive-Extensions/
 * http://www.introtorx.com/
+* https://github.com/Reactive-Extensions/
+* https://github.com/Vasiliauskas
 ---
 Ačiū :)
 
