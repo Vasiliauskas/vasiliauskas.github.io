@@ -96,8 +96,10 @@ Note: CODING
 * Streaming services
 * Live queries
 * Parallel computing
-
+* Mapping and reducing sequences
+* Abstracting message queues like RabbitMQ, MS MQ, etc.
 ---
+* http://www.reactivemanifesto.org/
 * http://reactivex.io/
 * http://www.introtorx.com/
 * https://github.com/Reactive-Extensions/
